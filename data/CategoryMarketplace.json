@@ -1,0 +1,49 @@
+{
+  "data": [
+    {
+      "title": "Film & Musik",
+      "icon_name": "FilmDanMusik",
+      "image": "https://res.cloudinary.com/dkbuwr7up/image/upload/v1587708960/category/Musik_film_chtxqf.png"
+    },
+    {
+      "title": "Handphone & Tablet",
+      "icon_name": "HandphoneDanTablet",
+      "image": "https://res.cloudinary.com/dkbuwr7up/image/upload/v1587708956/category/Handphone_Tablet_gb3kql.png"
+    },
+    {
+      "title": "Otomotif",
+      "icon_name": "Otomotif",
+      "image": "https://res.cloudinary.com/dkbuwr7up/image/upload/v1587708964/category/Otomotif_n9rrsd.png"
+    },
+    {
+      "title": "Olahraga",
+      "icon_name": "Olahraga",
+      "image": "https://res.cloudinary.com/dkbuwr7up/image/upload/v1587709444/category/olahraga_idv00a.png"
+    },
+    {
+      "title": "Komputer & Aksesoris",
+      "icon_name": "KomputerDanAksesoris",
+      "image": "https://res.cloudinary.com/dkbuwr7up/image/upload/v1587708961/category/Komputer_laptop_kny5lu.png"
+    },
+    {
+      "title": "Kamera",
+      "icon_name": "Kamera",
+      "image": "https://res.cloudinary.com/dkbuwr7up/image/upload/v1587708958/category/Camera_sb2ill.png"
+    },
+    {
+      "title": "Ibu & Bayi",
+      "icon_name": "IbuDanBayi",
+      "image": "https://res.cloudinary.com/dkbuwr7up/image/upload/v1587708958/category/Ibu_bayi_bqstta.png"
+    },
+    {
+      "title": "Makanan & Minuman",
+      "icon_name": "MakananDanMinuman",
+      "image": "https://res.cloudinary.com/dkbuwr7up/image/upload/v1587708962/category/makanan_Minuman_tdund6.png"
+    },
+    {
+      "title": "Rumah Tangga",
+      "icon_name": "RumahTangga",
+      "image": "https://res.cloudinary.com/dkbuwr7up/image/upload/v1587708955/category/Dapur_de1qud.png"
+    }
+  ]
+}

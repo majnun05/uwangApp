@@ -1,0 +1,9 @@
+{
+  "data": [
+    {"id": 1, "name": "Economy", "code": "E"},
+    {"id": 2, "name": "Premium Economy", "code": "PE"},
+    {"id": 5, "name": "Business", "code": "B"},
+    {"id": 6, "name": "First", "code": "F"},
+    {"id": 7, "name": "Premium First", "code": "PF"}
+  ]
+}

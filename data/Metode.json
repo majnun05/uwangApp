@@ -1,0 +1,52 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "status": "1",
+      "icon": "tf",
+      "title": "Transfer Bank",
+      "subtitle": "Isi Saldo Melalui Transfer Bank",
+      "link": "TopupDone"
+    },
+    {
+      "id": 2,
+      "status": "1",
+      "icon": "ovo",
+      "title": "OVO",
+      "subtitle": "Pembayaran melalui Aplikasi OVO",
+      "link": "TopupEwalletDone"
+    },
+    {
+      "id": 3,
+      "status": "1",
+      "icon": "alfa",
+      "title": "Alfamart - Alfamidi - Dan Dan",
+      "subtitle": "Pembayaran melalui Alfamart Terdekat",
+      "link": "TopupAlfamartDone"
+    },
+    {
+      "id": 5,
+      "status": "1",
+      "icon": "va",
+      "title": "Virtual Account",
+      "subtitle": "Konfirmasi Otomatis 24 Jam",
+      "link": "TopupVa"
+    },
+    {
+      "id": 6,
+      "status": "1",
+      "icon": "qris",
+      "title": "QRIS Uwang",
+      "subtitle": "Pembayaran melalui Scan QR Code",
+      "link": "TopupQris"
+    },
+    {
+      "id": 7,
+      "status": "1",
+      "icon": "asakita",
+      "title": "PayLater",
+      "subtitle": "Ajukan pinjaman dana usaha",
+      "link": "Maintenance"
+    }
+  ]
+}

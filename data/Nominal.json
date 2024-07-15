@@ -1,0 +1,10 @@
+{
+  "data": [
+    {"id": 1, "price": "50.000", "price_real": 50000},
+    {"id": 2, "price": "100.000", "price_real": 100000},
+    {"id": 5, "price": "250.000", "price_real": 250000},
+    {"id": 6, "price": "500.000", "price_real": 500000},
+    {"id": 7, "price": "750.000", "price_real": 750000},
+    {"id": 8, "price": "1 Juta", "price_real": 1000000}
+  ]
+}

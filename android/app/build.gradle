@@ -2,6 +2,11 @@ apply plugin: "com.android.application"
 apply plugin: "org.jetbrains.kotlin.android"
 apply plugin: "com.facebook.react"
 
+project.ext.react = [
+    entryFile: "index.js",
+    enableHermes: true,  // clean and rebuild if changing\
+]
+
 /**
  * This is the configuration block to customize your React Native Android app.
  * By default you don't need to apply any configuration, just uncomment the lines you need.
@@ -81,6 +86,9 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        multiDexEnabled true
+        missingDimensionStrategy 'react-native-camera', 'general'
+        resConfigs "id"
     }
     signingConfigs {
         debug {
@@ -102,11 +110,35 @@ android {
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
     }
+
+     packagingOptions {
+        pickFirst '**/libc++_shared.so'
+        pickFirst '**/libfbjni.so'
+        exclude 'lib/arm64-v8a/libc++_shared.so'
+    }
+
+    lint {
+        baseline = file("lint-baseline.xml")
+    }
+    
+    lintOptions {
+        abortOnError false
+        absolutePaths false
+        checkReleaseBuilds false
+        ignoreWarnings true
+    }
+    
+    aaptOptions {
+        cruncherEnabled = false
+    }
 }
 
 dependencies {
     // The version of react-native is set by the React Native Gradle Plugin
+    implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation("com.facebook.react:react-android")
+    implementation "com.facebook.react:react-native:+"
+    implementation 'com.android.support:multidex:1.0.3'
 
     if (hermesEnabled.toBoolean()) {
         implementation("com.facebook.react:hermes-android")
@@ -115,4 +147,5 @@ dependencies {
     }
 }
 
+// apply plugin: 'com.google.gms.google-services'
 apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
